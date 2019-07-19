@@ -11,8 +11,8 @@
 
             {% for posts in post %}
         <div>
-                <p>published: {{ posts.id }}</p>
-                <p>published: {{ posts.published_date }}</p>
+                <p>Id:{{ posts.id }}</p>
+                <p>Published: {{ posts.published_date }}</p>
                 <h2><a href="">{{ posts.title }}</a></h2>
                 <p>{{ posts.text|truncatechars:150 }}</p>
         </div>
