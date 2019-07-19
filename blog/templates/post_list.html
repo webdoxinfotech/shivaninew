@@ -6,11 +6,12 @@
 
 
         <div>
-            <h1><a href="/">Amit's Blog</a></h1>
+            <h1><a href="/">Amit's Blogs</a></h1>
         </div>
 
             {% for posts in post %}
         <div>
+                <p>published: {{ posts.id }}</p>
                 <p>published: {{ posts.published_date }}</p>
                 <h2><a href="">{{ posts.title }}</a></h2>
                 <p>{{ posts.text|truncatechars:150 }}</p>
